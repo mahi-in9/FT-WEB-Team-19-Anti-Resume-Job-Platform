@@ -83,7 +83,7 @@ export default function LandingPage() {
             <div className="flex items-center">
               <div className="flex-shrink-0 flex items-center">
                 <SparklesIcon className={`h-8 w-8 ${darkMode ? 'text-indigo-400' : 'text-indigo-600'}`} />
-                <span className={`ml-2 text-xl font-bold ${darkMode ? 'text-indigo-400' : 'text-indigo-600'}`}>SkillProof</span>
+                <span className={`ml-2 text-xl font-bold ${darkMode ? 'text-indigo-400' : 'text-indigo-600'}`}>Anti-Resume Revolution</span>
               </div>
             </div>
             <div className="hidden md:block">
@@ -152,7 +152,7 @@ export default function LandingPage() {
       <section id="how-it-works" className={`py-20 ${darkMode ? 'bg-gray-800' : 'bg-white'}`}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className={`text-3xl font-bold mb-4 ${darkMode ? 'text-white' : 'text-gray-900'}`}>How SkillProof Works</h2>
+            <h2 className={`text-3xl font-bold mb-4 ${darkMode ? 'text-white' : 'text-gray-900'}`}>How Anti-Resume Revolution Works</h2>
             <p className={`text-xl max-w-3xl mx-auto ${darkMode ? 'text-gray-300' : 'text-gray-600'}`}>
               Whether you're looking for work or talent, we've built a fairer process
             </p>
@@ -245,7 +245,7 @@ export default function LandingPage() {
       <section id="features" className={`py-20 ${darkMode ? 'bg-gray-900' : 'bg-indigo-50'}`}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className={`text-3xl font-bold mb-4 ${darkMode ? 'text-white' : 'text-gray-900'}`}>Why SkillProof is Different</h2>
+            <h2 className={`text-3xl font-bold mb-4 ${darkMode ? 'text-white' : 'text-gray-900'}`}>Why Anti-Resume Revolution is Different</h2>
             <p className={`text-xl max-w-3xl mx-auto ${darkMode ? 'text-gray-300' : 'text-gray-600'}`}>
               We're rebuilding hiring from the ground up to be skills-first
             </p>
@@ -311,7 +311,7 @@ export default function LandingPage() {
           <div className="text-center mb-16">
             <h2 className={`text-3xl font-bold mb-4 ${darkMode ? 'text-white' : 'text-gray-900'}`}>Sample Challenges</h2>
             <p className={`text-xl max-w-3xl mx-auto ${darkMode ? 'text-gray-300' : 'text-gray-600'}`}>
-              Try these example challenges to see how SkillProof works
+              Try these example challenges to see how Anti-Resume Revolution works
             </p>
           </div>
 
@@ -379,7 +379,7 @@ export default function LandingPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl font-bold mb-6">Ready to Transform Hiring?</h2>
           <p className="text-xl mb-8 max-w-3xl mx-auto opacity-90">
-            Join SkillProof today and experience hiring based on what really matters - skills.
+            Join Anti-Resume Revolution today and experience hiring based on what really matters - skills.
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <button className="bg-white text-indigo-600 px-8 py-4 rounded-lg text-lg font-medium hover:bg-indigo-50 transition-colors">
@@ -433,7 +433,7 @@ export default function LandingPage() {
             </div>
           </div>
           <div className={`mt-12 pt-8 border-t ${darkMode ? 'border-gray-700' : 'border-gray-700'} flex flex-col md:flex-row justify-between items-center`}>
-            <p className="text-gray-400 text-sm">© 2023 SkillProof. All rights reserved.</p>
+            <p className="text-gray-400 text-sm">© 2023 Anti-Resume Revolution. All rights reserved.</p>
             <div className="mt-4 md:mt-0 flex space-x-6">
               <a href="#" className="text-gray-400 hover:text-white text-sm">Privacy Policy</a>
               <a href="#" className="text-gray-400 hover:text-white text-sm">Terms of Service</a>
