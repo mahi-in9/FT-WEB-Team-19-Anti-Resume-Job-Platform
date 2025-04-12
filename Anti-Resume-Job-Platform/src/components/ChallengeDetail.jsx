@@ -3,8 +3,7 @@ import { useParams, useNavigate, Link } from 'react-router-dom';
 import { doc, getDoc } from 'firebase/firestore';
 import { db, storage } from '../firebase/config';
 import { ref, uploadBytes, getDownloadURL } from 'firebase/storage';
-// import { ArrowLeftIcon } from '@heroicons/react/24/solid';
-// import { ArrowLeftIcon } from '@heroicons/react/solid';
+
 const ChallengeDetail = () => {
   const { id } = useParams();
   const navigate = useNavigate();

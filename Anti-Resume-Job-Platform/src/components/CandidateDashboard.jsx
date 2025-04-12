@@ -10,12 +10,12 @@ const CandidateDashboard = () => {
   const [userData, setUserData] = useState(null);
   const [isLoading, setIsLoading] = useState(true);
   const [recommendedChallenges, setRecommendedChallenges] = useState([]);
-  // const [userSkills, setUserSkills] = useState([]);
+
   const [activeChallengesCount, setActiveChallengesCount] = useState(0);
   const navigate = useNavigate();
 
   const handleLogout = async () => {
-    // Add your actual logout logic here
+
     console.log("Logout initiated");
     navigate("/login");
   };
@@ -24,7 +24,7 @@ const CandidateDashboard = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        // Simulate user data fetch (replace with actual Firebase call)
+
         const mockUserData = {
           id: "user123",
           name: "Alex Johnson",
@@ -36,9 +36,7 @@ const CandidateDashboard = () => {
         };
 
         setUserData(mockUserData);
-        // setUserSkills(mockUserData.skills);
 
-        // Set up real-time challenge listener
         const challengesQuery = query(
           collection(db, "challenges"),
           where("skills", "array-contains-any", mockUserData.skills),
@@ -52,8 +50,7 @@ const CandidateDashboard = () => {
           }));
           setRecommendedChallenges(challenges);
 
-          // Calculate active challenges (started but not completed)
-          // const activeCount = 
+
           setActiveChallengesCount(challenges.filter(challenge =>
             mockUserData.activeChallenges.includes(challenge.id)
           ).length);
@@ -71,13 +68,10 @@ const CandidateDashboard = () => {
     fetchData();
   }, []);
 
-  // const handleLogout = () => {
-  //   // Firebase sign out if using auth
-  //   signOut(auth).then(() => navigate('/login'));
-  // };
+
 
   const handleStartChallenge = (challengeId) => {
-    // In a real app, you would update user's active challenges in Firestore
+
     console.log("Starting challenge:", challengeId);
     navigate(`/challenge/${challengeId}`);
   };

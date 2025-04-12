@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import "./EmployeeDashboard.css"; // Create corresponding CSS file
+import "./EmployeeDashboard.css";
 
 const EmployeeDashboard = () => {
   const [activeTab, setActiveTab] = useState("candidates");
@@ -252,7 +252,7 @@ const EmployeeDashboard = () => {
               <div className="metric-card">
                 <h3>Candidate Sources</h3>
                 <div className="pie-chart-placeholder">
-                  {/* Would be replaced with actual chart */}
+
                   <div className="pie-slice platform"></div>
                   <div className="pie-slice referrals"></div>
                   <div className="pie-slice outbound"></div>
