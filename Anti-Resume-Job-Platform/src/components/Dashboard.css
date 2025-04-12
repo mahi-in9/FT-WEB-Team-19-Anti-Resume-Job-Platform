@@ -102,12 +102,16 @@
 }
 
 .welcome-banner {
+  background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
+  color: white;
+  padding: 2rem;
+  border-radius: 12px;
   margin-bottom: 2rem;
 }
 
 .welcome-banner h1 {
   font-size: 2rem;
-  color: #333;
+  /* color: #333; */
   margin-bottom: 0.5rem;
 }
 
@@ -257,7 +261,12 @@
 
 .stat-label {
   font-size: 0.85rem;
-  color: #888;
+  opacity: 0.9;
+}
+
+.stat-number {
+  font-weight: 700;
+  font-size: 1.25rem;
 }
 
 .stat-value {
@@ -360,6 +369,7 @@
   margin-bottom: 2rem;
 }
 
+
 .stat-card {
   background-color: #f9f9f9;
   border-radius: 8px;
@@ -386,8 +396,23 @@
   font-size: 0.9rem;
 }
 
+.stats-container {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
 .skills-chart {
   margin: 2rem 0;
+}
+
+.stat-pill {
+  background: rgba(255, 255, 255, 0.15);
+  padding: 0.5rem 1rem;
+  border-radius: 999px;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 }
 
 .chart-placeholder {
@@ -440,6 +465,7 @@
   0% {
     transform: rotate(0deg);
   }
+
   100% {
     transform: rotate(360deg);
   }
@@ -453,4 +479,118 @@
   color: #888;
   font-size: 0.9rem;
   border-top: 1px solid #eee;
+}
+
+
+/* Add to existing Dashboard.css */
+.challenges-section {
+  margin-top: 2rem;
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.section-header h2 {
+  font-size: 1.5rem;
+  color: #1e293b;
+}
+
+.section-actions {
+  display: flex;
+  gap: 1rem;
+}
+
+.refresh-btn {
+  background: #e2e8f0;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.refresh-btn:hover {
+  background: #cbd5e1;
+}
+
+.skill-filter {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.skill-filter select {
+  padding: 0.5rem;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+}
+
+.skills-container {
+  margin: 1rem 0;
+}
+
+.skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.skill-tag {
+  background-color: #e6f7ff;
+  color: #1890ff;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.8rem;
+}
+
+.empty-state {
+  text-align: center;
+  padding: 2rem;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+}
+
+.empty-state p {
+  margin-bottom: 1rem;
+  color: #666;
+}
+
+.primary-button {
+  padding: 0.75rem 1.5rem;
+  background-color: #3a86ff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.2s;
+}
+
+.primary-button:hover {
+  background-color: #1a6feb;
+}
+
+
+@media (max-width: 768px) {
+  .welcome-banner {
+    padding: 1.5rem;
+  }
+
+  .section-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .stats-container {
+    flex-direction: column;
+  }
 }
