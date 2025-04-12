@@ -1,1 +1,0 @@
-# FT-WEB-Team-19-Anti-Resume-Job-Platform
