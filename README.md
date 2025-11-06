@@ -223,7 +223,7 @@ git push origin feature/new-component
 
 ## 📸 Screenshot
 
-[Landing](screenshot/landing.png)
+![Landing](screenshot/landing.png)
 
 ![Candidate](screenshot/Candidate.png)
 
