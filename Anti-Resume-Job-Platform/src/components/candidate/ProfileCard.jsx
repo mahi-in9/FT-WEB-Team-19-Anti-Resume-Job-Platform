@@ -16,7 +16,7 @@ export default function ProfileCard() {
   const [form, setForm] = useState(data);
 
   useEffect(() => {
-    setForm(data), [data];
+    setForm(data);
   }, [data]);
 
   const onChange = (e) =>

@@ -14,7 +14,9 @@ export default function TasksPanel() {
   const [tasks, setTasks] = useState(data || []);
   const [newTask, setNewTask] = useState("");
 
-  useEffect(() => setTasks(data || []), [data]);
+  useEffect(() => {
+    setTasks(data || []);
+  }, [data]);
 
   function toggle(id) {
     const next = tasks.map((t) => (t.id === id ? { ...t, done: !t.done } : t));

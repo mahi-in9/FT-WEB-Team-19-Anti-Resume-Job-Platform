@@ -77,7 +77,9 @@ export default function Challenges() {
   );
   const [items, setItems] = useState(challenges);
 
-  useEffect(() => setItems(challenges), [challenges]);
+  useEffect(() => {
+    setItems(challenges);
+  }, [challenges]);
 
   function update(id, status) {
     const next = items.map((it) => (it.id === id ? { ...it, status } : it));
