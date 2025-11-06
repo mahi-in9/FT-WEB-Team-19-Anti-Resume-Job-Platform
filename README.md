@@ -15,6 +15,7 @@
 **Anti-Resume** is a next-generation recruitment platform that removes traditional resumes from the hiring process.  
 Instead of listing credentials, candidates showcase **real challenges**, **project submissions**, and **skills** — while employers make hiring decisions based on **performance analytics**.
 
+**Live Demo:** [AntiResume on Vercel](https://ft-web-team-19-anti-resume-job-platform-git-main-mahi2.vercel.app/)
 ---
 
 ## 🧩 Features
