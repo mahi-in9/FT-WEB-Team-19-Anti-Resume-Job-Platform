@@ -1,41 +1,37 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Home from "./components/Home";
-import Login from "./components/Login";
-import Register from "./components/Register";
-import CandidateDashboard from "./components/CandidateDashboard";
-import ChallengePage from './components/ChallengePage';
-import PostChallenge from './components/PostChallenge';
-import ChallengeDetail from './components/ChallengeDetail';
-
-import NotFound from "./NotFound";
-import ChallengeFeed from "./components/ChallengeFeed";
+import { Routes, Route } from "react-router-dom";
+import Landing from "./pages/Landing";
+import Login from "./pages/Login";
+import Signup from "./pages/Signup";
+import CandidateDashboard from "./pages/CandidateDashboard";
+import EmployerDashboard from "./pages/EmployerDashboard";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
+import PrivateRoute from "./components/PrivateRoute";
 
 function App() {
   return (
-    <Router>
+    <>
+      <Navbar />
       <Routes>
-        {/* Public Routes */}
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<Landing />} />
         <Route path="/login" element={<Login />} />
-        <Route path="/register" element={<Register />} />
+        <Route path="/signup" element={<Signup />} />
 
-        {/* Candidate Routes */}
-        <Route path="/candidate-dashboard" element={<CandidateDashboard />} />
-
-        {/* Challenge Management Routes */}
-        <Route path="/challenges" element={<ChallengePage />}>
-          <Route index element={<ChallengeFeed
-          />} />
-          <Route path="post" element={<PostChallenge />} />
+        {/* 🔒 Protected Routes */}
+        <Route element={<PrivateRoute allowedRoles={["candidate"]} />}>
+          <Route path="/candidate" element={<CandidateDashboard />} />
         </Route>
 
-        {/* Challenge Detail Route */}
-        <Route path="/challenges/:id" element={<ChallengeDetail />} />
+        <Route element={<PrivateRoute allowedRoles={["employer", "admin"]} />}>
+          <Route path="/employer" element={<EmployerDashboard />} />
+        </Route>
 
-        {/* 404 Not Found */}
-        <Route path="*" element={<NotFound />} />
+        <Route element={<PrivateRoute allowedRoles={["admin"]} />}>
+          <Route path="/admin" element={<EmployerDashboard />} />
+        </Route>
       </Routes>
-    </Router>
+      <Footer />
+    </>
   );
 }
 
