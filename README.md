@@ -236,3 +236,6 @@ Frontend Developer | React & Firebase Enthusiast
 ## 📄 License
 
 This project is licensed under the MIT License — feel free to use and modify it.
+
+## 🏷️ Tags / Topics
+• `mern` • `react` • `vite` • `tailwindcss` • `nodejs` • `firebase-auth` • `anti-resume-app` • `sustainability` • `javascript` • `webapp` • `frontend` • `vercel`
